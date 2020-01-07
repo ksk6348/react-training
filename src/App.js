@@ -1,8 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
+import photo from './img/rascal.jpg';
 import './App.css';
-import Name from './Atoms/Name'
-import Bio from './Atoms/Bio'
+import Name from './Atoms/Name';
+import Bio from './Atoms/Bio';
+import Photo from './Atoms/Photo';
 
 class App extends React.Component {
   constructor () {
@@ -10,6 +11,7 @@ class App extends React.Component {
     this.state = {
       name: "Kosuke Oya",
       bio: "Yokohama National University",
+      photo,
     }
   }
 
@@ -17,7 +19,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <Photo photo={this.state.photo}></Photo>
           <Name name={this.state.name}></Name>
           <Bio bio={this.state.bio}></Bio>
         </header>
