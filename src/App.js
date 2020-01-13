@@ -1,6 +1,5 @@
 import React from 'react';
 import photo from './img/rascal.jpg';
-// import './App.css';
 import Name from './Atoms/Name';
 import Bio from './Atoms/Bio';
 import Photo from './Atoms/Photo';
